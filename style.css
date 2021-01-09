@@ -1,0 +1,54 @@
+body{
+    font-family: Victor Mono;
+}
+.imgbox{
+z-index:2;
+position:absolute;
+top:250px;
+}
+.box{
+    background-color:rgb(235, 219, 219);
+    width: 1000px;
+    height: 600px;
+    border-radius:20px;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+   margin-left: 200px;
+   margin-top:100px;
+}
+.womanimg{
+
+}
+.main{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left:20px;
+}
+
+.mainheader{
+    font-weight: bold;
+}
+@media screen and (max-width:600px){
+    body{
+        margin:0;
+        padding:0;
+        overflow:hidden;
+    }
+    .box{
+        width:90vw;
+        display: flex;
+        flex-direction: column;
+        height:90vh;
+        margin-top:20px;
+        margin-left:20px;
+    }
+    .womanimg{
+        width:65vw;
+    }
+    .imgbox{
+        width:20vw;
+        z-index:2;
+        top:150px;
+    }
+}
